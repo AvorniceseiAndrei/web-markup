@@ -13,3 +13,11 @@ p {
 img{
     max-width: 200px;
 }
+section {
+    display:flex;
+    width:1000;
+    height:800;
+    border:solid red 5px;
+    align-items:center;
+    justify-content:center; 
+}
