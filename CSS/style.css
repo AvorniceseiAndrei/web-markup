@@ -10,3 +10,6 @@ h3 {
 p {
     font-size: 16px;
 }
+img{
+    max-width: 200px;
+}
