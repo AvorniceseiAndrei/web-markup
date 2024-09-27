@@ -21,3 +21,26 @@ section {
     align-items:center;
     justify-content:center; 
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.box{
+    font: 50;
+    text-align: center;
+    padding: 20px;
+}
+.left{
+    width: 25%;
+    background-color: lightseagreen;
+
+}
+.center{
+    width: 50%;
+    background-color: lightseagreen;
+}
+.right{
+    width: 25%;
+    background-color: lightseagreen;
+}
