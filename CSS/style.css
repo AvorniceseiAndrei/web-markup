@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -180,4 +181,74 @@ figure img {
 
 .cta-button:hover {
     background-color: #310b0b;
+}
+.what-can-u-expect {
+    background-color: #007BFF;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border: 3px solid #000000;
+    border-radius: 2px; 
+    text-align: center; 
+    margin: 0px 0; 
+  
+}
+.what-can-u-expect {
+    text-align: center;
+    margin: 0px ;
+}
+
+.what-can-u-expect h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.Locations-and-Where-You-Can-Play-text {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.Locations-and-Where-You-Can-Play-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+    margin: 0 20px; 
+    flex: 1; 
+}
+
+.Locations-and-Where-You-Can-Play-text img {
+    max-width: 300px; 
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 20px; 
+}
+.Events-text img {
+    
+    max-width: 300px; 
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.Events-text {
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.Events-text p {
+    
+    text-align: right;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: black;
+    margin: 0 20px; 
+}
+.Events h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
