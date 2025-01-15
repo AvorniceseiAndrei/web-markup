@@ -1,88 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        // Function to display the success popup
-        function showSuccessPopup(event) {
-            event.preventDefault(); // Prevent form submission
-            const popup = document.getElementById('success-popup');
-            popup.style.display = 'block';
-        }
-
-        // Function to close the popup
-        function closePopup() {
-            const popup = document.getElementById('success-popup');
-            popup.style.display = 'none';
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football in Haarlem</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">   
 </head>
-<body>
+<body class="container">
+
     <header>
-        <nav>
-            <h1>Football Haarlem</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <nav class="navbar">
+            <figure>
+                <img src="img/logo.png" alt="Haarlem Football Logo" title="Haarlem Football Logo">
+            </figure>
+            <ul class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="equipment-stores.html">Equipment Stores</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
                 <li><a href="rules.html">Rules</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
+            <section class="language-selector">
+                <img src="img/us-flag.png" alt="English Language" title="Select Language">
+                <span>EN</span>
+                <span>▼</span>
+            </section>
         </nav>
     </header>
 
     <main>
-        <h2>Get In Touch Today</h2>
-        <section>
-            <!-- Contact Form -->
+        <section class="form-container">
+            <article>
+                <h1>Contact Form</h1>
+                <p>Please fill out the form below to get in touch with us.</p>
+            </article>
             <form id="contact-form" onsubmit="showSuccessPopup(event)">
-                <label for="title">Title:</label>
-                <select id="title" name="title">
-                    <option value="Mr">Mr</option>
-                    <option value="Ms">Ms</option>
-                    <option value="Other">Other</option>
-                </select>
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label for="title">Title:</label>
+                    <select id="title" name="title" required>
+                        <option value="Mr">Mr</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Other">Other</option>
+                    </select>
 
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required placeholder="Type here">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Type here">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Type here">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Type here">
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required placeholder="Type here"></textarea>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Type here">
 
-                <button type="submit">Send Message</button>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required placeholder="Type here"></textarea>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Type here"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </fieldset>
             </form>
 
-            <!-- Contact Details -->
             <aside>
                 <h3>Contact Details</h3>
                 <p><strong>Our Location:</strong> 58 Middle Point Rd, San Francisco, 94114</p>
-                <p><strong>Call Us:</strong> (123) 456 - 789</p>
-                <p><strong>Email Us:</strong> contact@fccommunity.com</p>
-                <p>
-                    <a href="#"><img src="facebook-icon.png" alt="Facebook" title="Follow us on Facebook"></a>
-                    <a href="#"><img src="instagram-icon.png" alt="Instagram" title="Follow us on Instagram"></a>
-                    <a href="#"><img src="twitter-icon.png" alt="Twitter" title="Follow us on Twitter"></a>
-                </p>
             </aside>
         </section>
     </main>
 
-    <!-- Success Popup -->
-    <section id="success-popup" style="display: none;">
-        <div>
-            <h3>Success</h3>
-            <p>Thank you for your message! We are working hard to provide the best services and details for you.</p>
-            <button onclick="closePopup()">Close</button>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Haarlem Football Community. All Rights Reserved.</p>
+    <footer class="footer-section">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="logo" title="footer logo"></a>
+        <p class="copyrights">Copyright &copy; 2024</p>
+        <p class="Cookies">This website uses Cookies</p>
+        <p class="policy">Privacy policy Terms and conditions</p>
     </footer>
+
 </body>
 </html>
