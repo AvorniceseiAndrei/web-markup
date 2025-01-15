@@ -4,15 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        // Function to display the success popup
+        function showSuccessPopup(event) {
+            event.preventDefault(); // Prevent form submission
+            const popup = document.getElementById('success-popup');
+            popup.style.display = 'block';
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            const popup = document.getElementById('success-popup');
+            popup.style.display = 'none';
+        }
+    </script>
 </head>
 <body>
-   
-    
+    <header>
+        <nav>
+            <h1>Football Haarlem</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="equipment-stores.html">Equipment Stores</a></li>
+                <li><a href="rules.html">Rules</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <h2>Get In Touch Today</h2>
+        <section>
+            <!-- Contact Form -->
+            <form id="contact-form" onsubmit="showSuccessPopup(event)">
+                <label for="title">Title:</label>
+                <select id="title" name="title">
+                    <option value="Mr">Mr</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Other">Other</option>
+                </select>
 
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required placeholder="Type here">
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Type here">
 
-    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Type here"></textarea>
 
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- Contact Details -->
+            <aside>
+                <h3>Contact Details</h3>
+                <p><strong>Our Location:</strong> 58 Middle Point Rd, San Francisco, 94114</p>
+                <p><strong>Call Us:</strong> (123) 456 - 789</p>
+                <p><strong>Email Us:</strong> contact@fccommunity.com</p>
+                <p>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook" title="Follow us on Facebook"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram" title="Follow us on Instagram"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter" title="Follow us on Twitter"></a>
+                </p>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Success Popup -->
+    <section id="success-popup" style="display: none;">
+        <div>
+            <h3>Success</h3>
+            <p>Thank you for your message! We are working hard to provide the best services and details for you.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Haarlem Football Community. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
